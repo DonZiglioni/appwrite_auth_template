@@ -1,0 +1,23 @@
+.game-box {
+    position: absolute;
+    top: 1em;
+    left: 55%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 10rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(151, 151, 0);
+}
+
+
+.point,
+.msg {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

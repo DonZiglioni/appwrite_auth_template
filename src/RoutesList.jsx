@@ -2,7 +2,7 @@ import React from 'react';
 import Home from './components/Home/Home';
 import Signup from './components/Signup/Signup';
 import Login from './components/Login/Login';
-import Profile from './components/Profile/Profile';
+import Market from './components/Market/Market';
 import PrivateRoutes from './PrivateRoutes';
 
 import { Route, Routes } from 'react-router-dom';
@@ -17,7 +17,8 @@ const RoutesList = () => {
                 <Route path='/login' element={<Login />} />
 
                 <Route element={<PrivateRoutes />} >
-                    <Route path='/profile' element={<Profile />} />
+                    <Route path='/market' element={<Market />} />
+                    {/* <Route path='/market:id' element={<Profile />} /> */}
                 </Route>
             </Routes>
         </AuthProvider>

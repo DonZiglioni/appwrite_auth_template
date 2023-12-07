@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 
-const useCalculateLight = (dailyRolls) => {
+const useCalculateLight = () => {
 
-    let lightResults = [];
-    let balance = 100000000;
-    let bet = 72000;
+    const [lightBalance, setLightBalance] = useState(100000000)
+
+    const bet = 72000;
     let rollCount = 0;
     let point = 0;
 
@@ -68,14 +68,6 @@ const useCalculateLight = (dailyRolls) => {
     }
 
     let totalRolls = 0;
-
-    for (let roll in dailyRolls) {
-        totalRolls = totalRolls + 1;
-        playGame(dailyRolls[roll]);
-        if (totalRolls % 60 === 0) {
-            lightResults.push(balance);
-        }
-    }
 
     return lightResults;
 }

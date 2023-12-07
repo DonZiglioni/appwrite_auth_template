@@ -14,7 +14,7 @@ const Login = () => {
 
     useEffect(() => {
         if (user) {
-            navigate("/profile");
+            navigate("/market");
         }
     }, [])
 

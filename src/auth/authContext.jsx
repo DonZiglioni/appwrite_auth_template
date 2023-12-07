@@ -32,7 +32,7 @@ export const AuthProvider = ({ children }) => {
             console.log("LOGGING IN", res);
             const userData = await account.get();
             setUser(userData);
-            navigate("/profile");
+            navigate("/market");
         } catch (error) {
             console.log(error);
         }
@@ -61,7 +61,7 @@ export const AuthProvider = ({ children }) => {
             await account.createEmailSession(credentials.email, credentials.password);
             const userData = await account.get();
             setUser(userData);
-            navigate("/profile");
+            navigate("/market");
         } catch (error) {
             console.log(error);
         }

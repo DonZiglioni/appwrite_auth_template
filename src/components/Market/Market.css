@@ -1,0 +1,25 @@
+.market-app {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(218, 233, 218);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: auto;
+    scale: 1.1;
+
+}
+
+.title {
+    margin-top: 4em;
+}
