@@ -1,9 +1,12 @@
 {
+  "homepage": "https://donziglioni.github.io/dice_live",
   "name": "market-test",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -12,6 +15,7 @@
   "dependencies": {
     "appwrite": "^13.0.1",
     "chart.js": "^4.4.1",
+    "gh-pages": "^6.1.0",
     "jquery": "^3.5.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
